@@ -12,6 +12,7 @@
 		9070CACE293E761500DF27F2 /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070CACD293E761500DF27F2 /* EssentialFeedTests.swift */; };
 		9070CACF293E761500DF27F2 /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 9070CAC1293E761400DF27F2 /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9070CAD9293E779600DF27F2 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070CAD8293E779600DF27F2 /* FeedItem.swift */; };
+		9070CADB293E790700DF27F2 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070CADA293E790700DF27F2 /* FeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		9070CAC8293E761500DF27F2 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9070CACD293E761500DF27F2 /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
 		9070CAD8293E779600DF27F2 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		9070CADA293E790700DF27F2 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				9070CAD8293E779600DF27F2 /* FeedItem.swift */,
+				9070CADA293E790700DF27F2 /* FeedLoader.swift */,
 				9070CAC0293E761400DF27F2 /* EssentialFeed */,
 				9070CACC293E761500DF27F2 /* EssentialFeedTests */,
 				9070CABF293E761400DF27F2 /* Products */,
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9070CADB293E790700DF27F2 /* FeedLoader.swift in Sources */,
 				9070CAD9293E779600DF27F2 /* FeedItem.swift in Sources */,
 				9070CAC3293E761400DF27F2 /* EssentialFeed.docc in Sources */,
 			);
