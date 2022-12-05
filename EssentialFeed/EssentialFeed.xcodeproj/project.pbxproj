@@ -57,8 +57,7 @@
 		9070CAB4293E761400DF27F2 = {
 			isa = PBXGroup;
 			children = (
-				9070CAD8293E779600DF27F2 /* FeedItem.swift */,
-				9070CADA293E790700DF27F2 /* FeedLoader.swift */,
+				9070CADC293E7BAD00DF27F2 /* FeedFeature */,
 				9070CAC0293E761400DF27F2 /* EssentialFeed */,
 				9070CACC293E761500DF27F2 /* EssentialFeedTests */,
 				9070CABF293E761400DF27F2 /* Products */,
@@ -89,6 +88,15 @@
 				9070CACD293E761500DF27F2 /* EssentialFeedTests.swift */,
 			);
 			path = EssentialFeedTests;
+			sourceTree = "<group>";
+		};
+		9070CADC293E7BAD00DF27F2 /* FeedFeature */ = {
+			isa = PBXGroup;
+			children = (
+				9070CAD8293E779600DF27F2 /* FeedItem.swift */,
+				9070CADA293E790700DF27F2 /* FeedLoader.swift */,
+			);
+			path = FeedFeature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
