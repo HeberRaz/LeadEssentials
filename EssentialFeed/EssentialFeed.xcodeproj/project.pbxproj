@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		901D995029416C0100BA56A6 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D994F29416C0100BA56A6 /* RemoteFeedLoader.swift */; };
+		9068231F296526A700F4F08C /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070CACD293E761500DF27F2 /* RemoteFeedLoaderTests.swift */; };
+		90682320296526AB00F4F08C /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098A1D7295BD29B0048001C /* URLSessionHTTPClientTests.swift */; };
 		906D0D09295A0E2300C1CD72 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906D0D08295A0E2300C1CD72 /* HTTPClient.swift */; };
 		906D0D0B295A0EA500C1CD72 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906D0D0A295A0EA500C1CD72 /* FeedItemsMapper.swift */; };
 		9070CAC3293E761400DF27F2 /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9070CAC2293E761400DF27F2 /* EssentialFeed.docc */; };
 		9070CAC9293E761500DF27F2 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9070CABE293E761400DF27F2 /* EssentialFeed.framework */; };
-		9070CACE293E761500DF27F2 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070CACD293E761500DF27F2 /* RemoteFeedLoaderTests.swift */; };
 		9070CACF293E761500DF27F2 /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 9070CAC1293E761400DF27F2 /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9070CAD9293E779600DF27F2 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070CAD8293E779600DF27F2 /* FeedItem.swift */; };
 		9070CADB293E790700DF27F2 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070CADA293E790700DF27F2 /* FeedLoader.swift */; };
-		9098A1D8295BD29B0048001C /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098A1D7295BD29B0048001C /* URLSessionHTTPClientTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,8 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9070CACE293E761500DF27F2 /* RemoteFeedLoaderTests.swift in Sources */,
-				9098A1D8295BD29B0048001C /* URLSessionHTTPClientTests.swift in Sources */,
+				9068231F296526A700F4F08C /* RemoteFeedLoaderTests.swift in Sources */,
+				90682320296526AB00F4F08C /* URLSessionHTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
