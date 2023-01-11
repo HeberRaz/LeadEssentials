@@ -11,21 +11,7 @@ import EssentialFeed
 final class EssentiaFeedAPIEndToEndTests: XCTestCase {
 
     func test_endToEndServerGETFeedResult_matchesFixedAccountData() {
-        let notWorkingUrlString = "https://esentialdeveloper.com/feed-case-study/test-api/feed"
-        let urlStringBakup = "https://static1.squarespace.com/static/5891c5b8d1758ec68ef5dbc2/t/5c52cdd0b8a045df091d2fff/1548930512083/feed-case-study-test-api-feed.json"
-        let testServerURL = URL(string: urlStringBakup)!
-        let client = URLSessionHTTPClient()
-        let loader = RemoteFeedLoader(url: testServerURL, client: client)
-
-        let expectation = XCTestExpectation(description: "Wait for load completion")
-        var receivedResult: LoadFeedResult?
-
-        loader.load { result in
-            receivedResult = result
-            expectation.fulfill()
-        }
-        wait(for: [expectation], timeout: 5.0)
-        switch receivedResult {
+        switch getFeedResult() {
         case .success(let items)?:
             XCTAssertEqual(items.count, 8, "Expected 8 items in the test account feed")
             XCTAssertEqual(items[0], expectedItem(at: 0))
@@ -44,6 +30,24 @@ final class EssentiaFeedAPIEndToEndTests: XCTestCase {
     }
 
     // MARK: - Helpers
+
+    private func getFeedResult() -> LoadFeedResult? {
+//        let notWorkingUrlString = "https://esentialdeveloper.com/feed-case-study/test-api/feed"
+        let urlStringBakup = "https://static1.squarespace.com/static/5891c5b8d1758ec68ef5dbc2/t/5c52cdd0b8a045df091d2fff/1548930512083/feed-case-study-test-api-feed.json"
+        let testServerURL = URL(string: urlStringBakup)!
+        let client = URLSessionHTTPClient()
+        let loader = RemoteFeedLoader(url: testServerURL, client: client)
+
+        let expectation = XCTestExpectation(description: "Wait for load completion")
+        var receivedResult: LoadFeedResult?
+
+        loader.load { result in
+            receivedResult = result
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 5.0)
+        return receivedResult
+    }
     private func expectedItem(at index: Int) -> FeedItem {
         FeedItem(id: id(at: index), description: description(at: index), location: location(at: index), imageUrl: imageURL(at: index))
     }
