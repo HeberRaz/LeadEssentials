@@ -23,7 +23,7 @@ final class EssentiaFeedAPIEndToEndTests: XCTestCase {
             XCTAssertEqual(items[6], expectedItem(at: 6))
             XCTAssertEqual(items[7], expectedItem(at: 7))
         case .failure(let error)?:
-            XCTFail("Expected successful feed result, got \(error) instead")
+            XCTFail("Expected successful feed result, got \(error) error instead")
         default:
             XCTFail("Expected successful feed result, but got no result instead")
         }
