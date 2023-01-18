@@ -181,7 +181,7 @@ final class URLSessionHTTPClientTests: XCTestCase {
             return request
         }
         
-        override func startLoad ing() {
+        override func startLoading() {
             if let requestObserver = URLProtocolStub.requestObserver {
                 client?.urlProtocolDidFinishLoading(self)
                 return requestObserver(request)
